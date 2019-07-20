@@ -48,6 +48,10 @@ ifeq ($(USE_MEDIASDK),true)
     LOCAL_CFLAGS += -DUSE_MEDIASDK
 endif
 
+ifeq ($(ASUS_ZENFONE2_LP_BLOBS),true)
+LOCAL_CFLAGS += -DASUS_ZENFONE2_LP_BLOBS
+endif
+
 ifeq ($(TARGET_VPP_USE_GEN),true)
     LOCAL_CFLAGS += -DTARGET_VPP_USE_GEN
 endif
